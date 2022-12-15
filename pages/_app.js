@@ -1,10 +1,10 @@
-import Head from "next/head";
-import { Roboto_Mono } from "@next/font/google";
-import "../styles/globals.css";
+import Head from 'next/head'
+import { Roboto_Mono } from '@next/font/google'
+import '../styles/globals.css'
 
-const font = Roboto_Mono({ subsets: ["latin"] });
+const font = Roboto_Mono({ subsets: ['latin'] })
 
-export default function App({ Component, pageProps }) {
+export default function App ({ Component, pageProps }) {
   return (
     <>
       <Head>
@@ -15,5 +15,5 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
       </main>
     </>
-  );
+  )
 }
