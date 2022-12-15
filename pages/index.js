@@ -1,7 +1,14 @@
+import Background from '../src/components/Background/Background'
+import styles from '../styles/Home.module.css'
+
 export default function Home () {
   return (
     <>
-      <h1>HELLO WORLD !</h1>
+      <Background>
+        <div className={styles.titles}>
+          <h1> My Porfolio</h1>
+        </div>
+      </Background>
     </>
   )
 }
