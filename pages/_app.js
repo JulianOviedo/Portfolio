@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>Julian Oviedo Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={font.className}>
