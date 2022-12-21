@@ -8,7 +8,7 @@ export default function Home () {
       <Background>
         <Navbar/>
         <div className={styles.titles}>
-          <h1> My Porfoio</h1>
+          <h1> My Porfolio</h1>
         </div>
       </Background>
     </>
