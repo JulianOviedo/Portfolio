@@ -1,6 +1,6 @@
 .footer {
     position: fixed;
-   bottom: 0;
+    bottom: 0;
 }
 
 .h1 {
@@ -48,4 +48,11 @@
     display: flex;
     justify-content: center;
     padding: 10px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    height: 500px;
 }
