@@ -1,7 +1,7 @@
 .card {
     max-width: 750px;
     height: 100%;
-    border: 1px solid #ffffff;
+    border: 2px dashed #ffffff;
     border-radius: 10px;
     animation-name: floating;
     animation-duration: 3s;
