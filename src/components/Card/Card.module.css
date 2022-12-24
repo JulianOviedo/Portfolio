@@ -1,5 +1,5 @@
 .card {
-    min-width: 750px;
+    max-width: 750px;
     height: 100%;
     border: 1px solid #ffffff;
     border-radius: 10px;
@@ -15,4 +15,17 @@
     0% { transform: translate(0,  0px); }
     50%  { transform: translate(0, 15px); }
     100%   { transform: translate(0, -0px); }   
+}
+
+.card-title {
+    text-align: center;
+    font-weight: 400;
+    padding: 10px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.card-description {
+    text-align: center;
+    padding: 20px;
+    font-weight: 100;
 }

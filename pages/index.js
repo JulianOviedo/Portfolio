@@ -15,7 +15,11 @@ export default function Home () {
         <a className={styles['cvs-download']} download="downloadResumeEnglish" href="/public/Cv Julian Oviedo English.pdf">Cv English</a>
       </div>
       <div className={styles['card-container']}>
-        <Card/>
+        <Card
+          title="About me"
+          description='I am finishing the third year of my bachelor/s degree in computer science and in search of a job position where I can continue to grow, learn and evolve both professionally and personally, exploiting my skills and abilities through commitment and love for what I do and study.
+          I have solid knowledge in some frameworks like React.JS, Next.JS, Redux, Express and also, know Node.JS\n
+          I consider myself a very capable person to achieve everything i propose to and always want to learn new things. I think i only need the oportunity to introduce myself and show what I/m worth/'/>
       </div>
       <footer className={styles.footer}>
         <Balloon/>
