@@ -1,1 +1,9 @@
+.footer {
+    position: fixed;
+   bottom: 0;
+}
 
+.h1 {
+    padding: 20px;
+    text-align: center;
+}
