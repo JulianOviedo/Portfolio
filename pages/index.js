@@ -4,10 +4,10 @@ import styles from '../styles/Home.module.css'
 export default function Home () {
   return (
     <>
-      <div className={styles.titles}>
-        <h1> My Portfolio</h1>
+      <h1 className={styles.h1}>Julian Oviedo Portfolio</h1>
+      <footer className={styles.footer}>
         <Balloon/>
-      </div>
+      </footer>
     </>
   )
 }
