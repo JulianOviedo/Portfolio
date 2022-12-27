@@ -54,5 +54,6 @@
     display: flex;
     justify-content: center;
     padding: 20px;
+    width: 750px;
     height: 500px;
 }
