@@ -28,7 +28,7 @@ export default function Slides () {
           gif={'/shoesShop-video.mp4'}
           description={descriptionProyects1}
           link={linkProyect1}>
-          <p className={styles.p}> 🖥️ To see deployment <a href='shoes-shop-kyl2.vercel.app'>Go here!</a></p>
+          <p className={styles.p}> 🖥️ To see deployment <a href='www.shoes-shop-kyl2.vercel.app'>Go here!</a></p>
         </Card>
       </div>
     </Carousel>
