@@ -16,7 +16,7 @@ export default function Slides () {
         <Card
           title="Experience"
         >
-          <p className={styles['card-description']}> 💡 Software Developer at Solvd Inc. <br/><br/> FROM {'>'} January 2022 <br/> TO {'>'} Present <br/><br/> 💡 React Javascript Intern at Solvd Inc. <br/><br/> FROM {'>'} June 2022 <br/> TO {'>'} December 2022 <br/><br/> - Content and progress at <a href='https://github.com/qaprosoft/react-laba-arg-1'>Click here!</a></p>
+          <p className={styles['card-description']}> 💡 Software Developer at Solvd Inc. <br/><br/> FROM {'>'} January 2022 <br/> TO {'>'} Present <br/><br/> 💡 React Javascript Intern at Solvd Inc. <br/><br/> FROM {'>'} June 2022 <br/> TO {'>'} December 2022 <br/><br/> - Content and progress at <a href='https://github.com/qaprosoft/react-laba-arg-1'>Click here!</a> <br/><br/> 💡 Accountant at Centro de Estudios Filosoficos y Teologicos <br/><br/> FROM {'>'} August 2021 <br/> TO {'>'} December 2022 </p>
         </Card>
       </div>
       <div className={styles['card-container']}>
@@ -26,12 +26,12 @@ export default function Slides () {
           <div className={styles.video}> <video muted autoPlay loop width={600} height={350}>
             <source src={'/shoesShop-video.mp4'} type="video/mp4" />
           </video></div>
-          <p className={styles['card-description']}> 📚 Shoes Shop - Ecommerce mock <br/><br/> -A responsive app reated by Next.js using mainly React.js and MUI, also other libraries like Axios & ReactQuery to connect the API to the app.   <br/><br/> 📂 To see the code <a href='https://github.com/JulianOviedo/Shoes-Shop'>Click here!</a></p>
+          <p className={styles['card-description']}> 📚 Shoes Shop - Ecommerce mock <br/><br/> -A responsive app reated by Next.js using Next-auth for management the authentication and mainly React.js and MUI, also other libraries like Axios & ReactQuery to connect the API to the app.   <br/><br/> 📂 To see the code <a href='https://github.com/JulianOviedo/Shoes-Shop'>Click here!</a></p>
           <p className={styles.p}> 🖥️ To see deployment <a href='www.shoes-shop-kyl2.vercel.app'>Go here!</a></p>
           <hr/>
           <br/>
           <div className={styles.video}> <video muted autoPlay loop width={600} height={350}>
-            <source src={'/shoesShop-video.mp4'} type="video/mp4" />
+            <source src={'/Calculator-video.mp4'} type="video/mp4" />
           </video></div>
           <p className={styles['card-description']}> 📚 Calculator App <br/><br/> Just a Calculator with the android mobile design with MUI and React.js<br/><br/> 📂 To see the code <a href='https://github.com/JulianOviedo/CalculatorApp'>Click here!</a></p>
           <p className={styles.p}> 🖥️ To see deployment <a href='https://calculator-app-df6a9.web.app/'>Go here!</a></p>
