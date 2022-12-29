@@ -3,6 +3,7 @@ import { Roboto_Mono } from '@next/font/google'
 import { useEffect } from 'react'
 import '../styles/globals.css'
 import Background from '../src/components/Background/Background'
+import { Toaster } from 'react-hot-toast'
 
 const font = Roboto_Mono({ subsets: ['latin'] })
 
@@ -29,6 +30,7 @@ export default function App ({ Component, pageProps }) {
       </Head>
       <Background>
         <main className={font.className}>
+        <div><Toaster/></div>
           <Component {...pageProps} />
         </main>
       </Background>

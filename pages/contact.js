@@ -3,6 +3,7 @@ import Link from 'next/link'
 import styles from '../styles/contact.module.css'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser';
+import toast from 'react-hot-toast'
 
 export default function Contact () {
   const form = useRef();
@@ -16,6 +17,20 @@ export default function Contact () {
       }, (error) => {
           console.log(error.text);
       });
+      toast.promise(
+        emailjs.sendForm('service_uzp3v97', 'template_1g30q5a', form.current, 'YcAYDjd6_cta-3n9I')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        }),
+         {
+           loading: 'Sending...',
+           success: <b>Email was sended !</b>,
+           error: <b>The Email send failed, try again later</b>,
+         }
+       )
+       e.target.reset()
   };
   return (
     <>
