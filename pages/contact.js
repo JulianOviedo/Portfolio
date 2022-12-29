@@ -5,7 +5,7 @@ import { useRef } from 'react'
 import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast'
 
-export default function Contact () {
+export default function Contact() {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -13,24 +13,24 @@ export default function Contact () {
 
     emailjs.sendForm('service_uzp3v97', 'template_1g30q5a', form.current, 'YcAYDjd6_cta-3n9I')
       .then((result) => {
-          console.log(result.text);
+        console.log(result.text);
       }, (error) => {
-          console.log(error.text);
+        console.log(error.text);
       });
-      toast.promise(
-        emailjs.sendForm('service_uzp3v97', 'template_1g30q5a', form.current, 'YcAYDjd6_cta-3n9I')
+    toast.promise(
+      emailjs.sendForm('service_uzp3v97', 'template_1g30q5a', form.current, 'YcAYDjd6_cta-3n9I')
         .then((result) => {
-            console.log(result.text);
+          console.log(result.text);
         }, (error) => {
-            console.log(error.text);
+          console.log(error.text);
         }),
-         {
-           loading: 'Sending...',
-           success: <b>Email was sended !</b>,
-           error: <b>The Email send failed, try again later</b>,
-         }
-       )
-       e.target.reset()
+      {
+        loading: 'Sending...',
+        success: <b>Email was sended !</b>,
+        error: <b>The Email send failed, try again later</b>,
+      }
+    )
+    e.target.reset()
   };
   return (
     <>
@@ -38,17 +38,17 @@ export default function Contact () {
       <form ref={form} onSubmit={sendEmail} className={styles.form}>
         <label>
           <p className={styles['form-label']}>Name *</p>
-          <input type="text" name="user_name" required className={styles.input}/>
+          <input type="text" name="user_name" required className={styles.input} />
         </label>
         <label>
           <p className={styles['form-label']}>Email *</p>
-          <input type="email" name="user_email" required className={styles.input}/>
+          <input type="email" name="user_email" required className={styles.input} />
         </label>
         <label>
           <p className={styles['form-label']}>Message *</p>
-          <textarea name="message" required className={styles.textarea}/>
+          <textarea name="message" required className={styles.textarea} />
         </label>
-        <input type='submit' className={styles['form-button']} value='Send Email'/>
+        <input type='submit' className={styles['form-button']} value='Send Email' />
       </form>
       <footer className={styles.footer}>
         <Link href="/">

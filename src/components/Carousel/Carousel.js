@@ -3,7 +3,7 @@ import ReactSimplyCarousel from 'react-simply-carousel'
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft'
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight'
 
-function Carousel ({ children }) {
+function Carousel({ children }) {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0)
 
   return (
@@ -28,7 +28,7 @@ function Carousel ({ children }) {
             textAlign: 'center',
             width: 50
           },
-          children: <KeyboardDoubleArrowRightIcon/>
+          children: <KeyboardDoubleArrowRightIcon />
         }}
         backwardBtnProps={{
           // here you can also pass className, or any other button element attributes
@@ -45,7 +45,7 @@ function Carousel ({ children }) {
             textAlign: 'center',
             width: 50
           },
-          children: <KeyboardDoubleArrowLeftIcon/>
+          children: <KeyboardDoubleArrowLeftIcon />
         }}
         responsiveProps={[
           {

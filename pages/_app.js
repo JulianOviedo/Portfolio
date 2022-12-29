@@ -7,7 +7,7 @@ import { Toaster } from 'react-hot-toast'
 
 const font = Roboto_Mono({ subsets: ['latin'] })
 
-export default function App ({ Component, pageProps }) {
+export default function App({ Component, pageProps }) {
   useEffect(() => {
     const threeScript = document.createElement('script')
     threeScript.setAttribute('id', 'threeScript')
@@ -30,7 +30,7 @@ export default function App ({ Component, pageProps }) {
       </Head>
       <Background>
         <main className={font.className}>
-        <div><Toaster/></div>
+          <div><Toaster /></div>
           <Component {...pageProps} />
         </main>
       </Background>

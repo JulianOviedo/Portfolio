@@ -1,7 +1,7 @@
 import ContactMailIcon from '@mui/icons-material/ContactMail'
 import Link from 'next/link'
 
-export default function Balloon () {
+export default function Balloon() {
   return (
     <Link href="/contact">
       <ContactMailIcon sx={{

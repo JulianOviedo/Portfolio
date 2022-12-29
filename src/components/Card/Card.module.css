@@ -10,13 +10,20 @@
     margin-left: 30px;
     margin-top: 5px;
     overflow-y: scroll
-
 }
 
 @keyframes floating {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 15px); }
-    100%   { transform: translate(0, -0px); }   
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
 }
 
 .card-title {
@@ -25,4 +32,3 @@
     padding: 10px;
     border-bottom: 1px solid #ffffff;
 }
-

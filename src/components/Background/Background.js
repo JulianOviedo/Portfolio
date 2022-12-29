@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react'
 import NET from 'vanta/dist/vanta.waves.min'
 import * as THREE from 'three'
 
-export default function Background ({ children }) {
+export default function Background({ children }) {
   const [vantaEffect, setVantaEffect] = useState(0)
   const vantaRef = useRef(null)
   useEffect(() => {

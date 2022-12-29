@@ -6,7 +6,7 @@
     text-indent: 0 !important;
 }
 
-.video { 
+.video {
     display: flex;
     justify-content: center;
 }
@@ -20,10 +20,10 @@
 }
 
 .p {
-  text-align: justify;
-  padding: 20px;
-  font-weight: 100;
-  white-space: pre-wrap;
-  text-indent: 0 !important;
-  overflow-y: auto;
+    text-align: justify;
+    padding: 20px;
+    font-weight: 100;
+    white-space: pre-wrap;
+    text-indent: 0 !important;
+    overflow-y: auto;
 }
