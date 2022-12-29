@@ -20,6 +20,7 @@
         "react/prop-types" : "off",
         "react/react-in-jsx-scope" : "off",
         "indent" : ["error", 2],
-        "camelcase" : "off"
+        "camelcase" : "off",
+        "react/no-unescaped-entities" : "off"
     }
 }
