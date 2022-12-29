@@ -1,25 +1,39 @@
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew'
 import Link from 'next/link'
 import styles from '../styles/contact.module.css'
+import { useRef } from 'react'
+import emailjs from '@emailjs/browser';
 
 export default function Contact () {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_uzp3v97', 'template_1g30q5a', form.current, 'YcAYDjd6_cta-3n9I')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return (
     <>
       <h1 className={styles.h1}>You can contact me through this form:</h1>
-      <form method="post" action="mailto:julianovie234@gmail.com" className={styles.form}>
+      <form ref={form} onSubmit={sendEmail} className={styles.form}>
         <label>
           <p className={styles['form-label']}>Name *</p>
-          <input required className={styles.input}/>
+          <input type="text" name="user_name" required className={styles.input}/>
         </label>
         <label>
           <p className={styles['form-label']}>Email *</p>
-          <input type='email' required className={styles.input}/>
+          <input type="email" name="user_email" required className={styles.input}/>
         </label>
         <label>
           <p className={styles['form-label']}>Message *</p>
-          <textarea required className={styles.textarea}/>
+          <textarea name="message" required className={styles.textarea}/>
         </label>
-        <button className={styles['form-button']}>Send Email</button>
+        <input type='submit' className={styles['form-button']} value='Send Email'/>
       </form>
       <footer className={styles.footer}>
         <Link href="/">
@@ -27,7 +41,6 @@ export default function Contact () {
             width: 55, height: 55, m: '20px', color: '#ffffff', cursor: 'pointer'
           }}></ArrowBackIosNewIcon>
         </Link>
-
       </footer>
     </>
   )
