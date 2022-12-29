@@ -6,7 +6,7 @@ const descriptionAboutMe = ' 👋  Hi!  My name is Julian Oviedo, I\'m 26 years 
 const linkExperience = 'https://github.com/qaprosoft/react-laba-arg-1'
 const descriptionExperience = ' 💡 Software Developer at Solvd Inc. \n\n FROM > January 2022 \n TO > Present \n\n 💡 React Javascript Intern at Solvd Inc. \n\n FROM > June 2022 \n TO > December 2022 \n\n - Content and progress at '
 const descriptionProyects1 = ' 📚 Shoes Shop - Ecommerce mock \n\n -A responsive app created by Next.js using mainly React.js and MUI, also other libraries like Axios & ReactQuery to connect the API to the app.   \n\n 📂 To see the code '
-const linkProyect1 = 'https://github.com/JulianOviedo/Shoes-Sho'
+const linkProyect1 = 'https://github.com/JulianOviedo/Shoes-Shop'
 
 export default function Slides () {
   return (
