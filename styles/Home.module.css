@@ -50,20 +50,5 @@
     padding: 10px;
 }
 
-.card-container {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    width: 750px;
-    height: 500px;
-}
 
-.p {
-  text-align: justify;
-  padding: 20px;
-  font-weight: 100;
-  white-space: pre-wrap;
-  text-indent: 0 !important;
-  overflow-y: auto;
-}
 
