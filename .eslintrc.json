@@ -24,5 +24,6 @@
         ],
         "camelcase": "off",
         "react/no-unescaped-entities": "off"
-    }
+    },
+    "space-before-function-paren": "off"
 }
