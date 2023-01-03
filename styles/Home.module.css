@@ -46,10 +46,18 @@
 }
 
 .footer {
+  display: flex;
+  flex-direction: row;
   position: fixed;
   bottom: 0;
   right: 0;
 }
+
+.footer h1 {
+  margin: 20px;
+}
+
+
 
 
 

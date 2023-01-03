@@ -16,6 +16,7 @@ export default function Home() {
       </div>
       <Slides />
       <footer className={styles.footer}>
+        <h1>Hire me ! ➡</h1>
         <Balloon />
       </footer>
     </>
