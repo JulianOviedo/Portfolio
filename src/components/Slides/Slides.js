@@ -9,7 +9,7 @@ export default function Slides() {
         <Card
           title="About me"
         >
-          <p className={styles['card-description']}>👋  Hi!  My name is Julian Oviedo, I'm 26 years old <br /><br /> 🌍  I'm based in Córdoba, Argentina <br /><br /> I'm finishing the third year of my bachelor's degree in computer science and in search of a job position where I can continue to grow, learn and evolve both professionally and personally, exploiting my skills and abilities through commitment and love for what I do and study. <br /><br /> I have solid knowledge in some frameworks like React.JS, Next.JS, Redux, Express and also, know Node.JS <br /><br /> I consider myself a very capable person to achieve everything i propose to and always want to learn new things. I think i only need the oportunity to introduce myself and show what I'm worth</p>
+          <p className={styles['card-description']}>👋  Hi there ! My name is Julian, I’m 26 years old. I’m currently studying Computer Science since almost 3 years and also have an Accountant degree. As you can see, I really like maths and everything related with numbers. <br /><br />🌍  I'm based in Córdoba, Argentina <br /><br />🖥 I have solid knowledge in some frameworks like React.JS, Next.JS, Redux, Express and also, know Node.JS <br /><br />📚 I consider myself a very capable person to achieve everything i propose to and always want to learn new things. I think i only need the oportunity to introduce myself and show what I'm worth</p>
         </Card>
       </div>
       <div className={styles['card-container']}>
