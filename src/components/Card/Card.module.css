@@ -9,8 +9,23 @@
     animation-timing-function: ease-in-out;
     margin-left: 30px;
     margin-top: 5px;
-    overflow-y: scroll
+    overflow-y: auto
 }
+
+.card::-webkit-scrollbar {
+    width: 12px;
+}
+
+.card::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgb(255, 255, 255); 
+    border-radius: 10px;
+}
+
+.card::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255); 
+}
+
 
 @keyframes floating {
     0% {
