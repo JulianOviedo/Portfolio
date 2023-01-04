@@ -39,8 +39,8 @@ export default function Contact() {
         <div className={styles['contact-container__info-container']}>
         <Card title={'Personal info, just in case'}>
           <ul className={styles['contact-container__info-card']}>
-            <li>E-mail {'>'} julianovie234@gmail.com</li>
-            <li>Celphone {'>'}  +54 9 351 761-9357</li>
+            <li>E-mail ➡️ julianovie234@gmail.com</li>
+            <li>Celphone ➡️  +54 9 351 761-9357</li>
           </ul>
         </Card>
         </div>
