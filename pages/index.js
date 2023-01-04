@@ -23,16 +23,16 @@ export default function Home() {
       <footer className={styles.footer}>
         <div className={styles['footer-social-media']}>
           <SocialMedia link='https://www.linkedin.com/in/julian-oviedo-17b605136/' >
-            <LinkedInIcon sx={{ fontSize: "60px" }}/>
+            <LinkedInIcon sx={{ fontSize: "40px" }}/>
           </SocialMedia>
           <SocialMedia link='https://www.facebook.com/julian.oviedo.7' >
-            <FacebookIcon sx={{ fontSize: "60px" }}/>
+            <FacebookIcon sx={{ fontSize: "40px" }}/>
           </SocialMedia>
           <SocialMedia link='https://www.instagram.com/julian.oviedo.7/' >
-            <InstagramIcon sx={{ fontSize: "60px" }}/>
+            <InstagramIcon sx={{ fontSize: "40px" }}/>
           </SocialMedia>
           <SocialMedia link='https://github.com/JulianOviedo' >
-            <GitHubIcon sx={{ fontSize: "60px" }}/>
+            <GitHubIcon sx={{ fontSize: "40px" }}/>
           </SocialMedia>
         </div>
         <Button > Contact Me </Button>
