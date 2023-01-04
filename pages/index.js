@@ -5,6 +5,7 @@ import Slides from '../src/components/Slides/Slides'
 import SocialMedia from '../src/components/SocialMedia/SocialMedia'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 export default function Home() {
   return (
@@ -25,6 +26,9 @@ export default function Home() {
           </SocialMedia>
           <SocialMedia link='https://www.facebook.com/julian.oviedo.7' >
             <FacebookIcon sx={{ fontSize: "60px" }}/>
+          </SocialMedia>
+          <SocialMedia link='https://www.instagram.com/julian.oviedo.7/' >
+            <InstagramIcon sx={{ fontSize: "60px" }}/>
           </SocialMedia>
         </div>
         <Button > Contact Me </Button>
