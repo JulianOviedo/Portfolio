@@ -1,5 +1,5 @@
 import { Avatar } from '@mui/material'
-import Balloon from '../src/components/Balloon/Balloon'
+import Button from '../src/components/Button/Button'
 import styles from '../styles/Home.module.css'
 import Slides from '../src/components/Slides/Slides'
 
@@ -16,8 +16,7 @@ export default function Home() {
       </div>
       <Slides />
       <footer className={styles.footer}>
-        <h1>Hire me ! ➡</h1>
-        <Balloon />
+        <Button > Contact Me </Button>
       </footer>
     </>
   )
