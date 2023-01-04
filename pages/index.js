@@ -2,6 +2,9 @@ import { Avatar } from '@mui/material'
 import Button from '../src/components/Button/Button'
 import styles from '../styles/Home.module.css'
 import Slides from '../src/components/Slides/Slides'
+import SocialMedia from '../src/components/SocialMedia/SocialMedia'
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import FacebookIcon from '@mui/icons-material/Facebook';
 
 export default function Home() {
   return (
@@ -16,6 +19,14 @@ export default function Home() {
       </div>
       <Slides />
       <footer className={styles.footer}>
+        <div className={styles['footer-social-media']}>
+          <SocialMedia link='https://www.linkedin.com/in/julian-oviedo-17b605136/' >
+            <LinkedInIcon sx={{ fontSize: "60px" }}/>
+          </SocialMedia>
+          <SocialMedia link='https://www.facebook.com/julian.oviedo.7' >
+            <FacebookIcon sx={{ fontSize: "60px" }}/>
+          </SocialMedia>
+        </div>
         <Button > Contact Me </Button>
       </footer>
     </>
