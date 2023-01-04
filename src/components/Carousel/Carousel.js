@@ -14,7 +14,7 @@ function Carousel({ children }) {
         itemsToShow={1}
         itemsToScroll={1}
         forwardBtnProps={{
-          // here you can also pass className, or any other button element attribute
+          // here you can also pass className, or any other button element attributes
           style: {
             alignSelf: 'center',
             background: 'gray',
