@@ -4,6 +4,7 @@ import styles from '../styles/contact.module.css'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast'
+import Card from '../src/components/Card/Card'
 
 export default function Contact() {
   const form = useRef();
@@ -35,7 +36,14 @@ export default function Contact() {
   return (
     <div className={styles['contact-container']}>
       <div className={styles['contact-container__info']}>
-        <h1>hola</h1>
+        <div className={styles['contact-container__info-container']}>
+        <Card title={'Personal info, just in case'}>
+          <ul className={styles['contact-container__info-card']}>
+            <li>E-mail {'>'} julianovie234@gmail.com</li>
+            <li>Celphone {'>'}  +54 9 351 761-9357</li>
+          </ul>
+        </Card>
+        </div>
       </div>
       <div className={styles['contact-container__form']}>
         <h1 className={styles.h1}>You can contact me through this form:</h1>

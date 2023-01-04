@@ -8,6 +8,22 @@
 }
 .contact-container__info{
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.contact-container__info-container{
+    width: 500px;
+    height: 300px;
+}
+
+.contact-container__info-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
 }
 
 .h1 {
