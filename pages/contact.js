@@ -34,7 +34,9 @@ export default function Contact() {
   };
   return (
     <div className={styles['contact-container']}>
-      <div className={styles['contact-container__info']}></div>
+      <div className={styles['contact-container__info']}>
+        <h1>hola</h1>
+      </div>
       <div className={styles['contact-container__form']}>
         <h1 className={styles.h1}>You can contact me through this form:</h1>
         <form ref={form} onSubmit={sendEmail} className={styles.form}>
@@ -52,6 +54,7 @@ export default function Contact() {
           </label>
           <input type='submit' className={styles['form-button']} value='Send Email' />
         </form>
+      </div>
         <footer className={styles.footer}>
           <Link href="/">
             <ArrowBackIosNewIcon fontSize='large' sx={{
@@ -59,7 +62,6 @@ export default function Contact() {
             }}></ArrowBackIosNewIcon>
           </Link>
         </footer>
-      </div>
     </div>
   )
 }
