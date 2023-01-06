@@ -4,7 +4,7 @@ import styles from '../styles/contact.module.css'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast'
-// import Card from '../src/components/Card/Card'
+import Card from '../src/components/Card/Card'
 import PrimaryInput from '../src/components/PrimaryInput/PrimaryInput';
 
 export default function Contact() {
@@ -36,7 +36,7 @@ export default function Contact() {
   };
   return (
     <>
-     {/* <div className={styles['contact-container']}>
+     <div className={styles['contact-container']}>
        <div className={styles['contact-container__info']}>
          <div className={styles['contact-container__info-container']}>
          <Card title={'Personal info, just in case'}>
@@ -46,7 +46,7 @@ export default function Contact() {
            </ul>
          </Card>
          </div>
-       </div> */}
+       </div>
       <div className={styles['contact-container__form']}>
         <h1 className={styles.h1}>You can contact me through this form:</h1>
         <form ref={form} onSubmit={sendEmail} className={styles.form}>
@@ -63,7 +63,7 @@ export default function Contact() {
             }}></ArrowBackIosNewIcon>
           </Link>
         </footer>
-    {/* </div> */}
+    </div>
     </>
   )
 }
