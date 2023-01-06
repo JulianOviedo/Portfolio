@@ -15,7 +15,7 @@ a{
   color: #ffffff;
 }
 
-.button-carousel {
+.button-carousel-right, .button-carousel-left {
     align-self: center;
     background: gray;
     border: none;
@@ -31,9 +31,15 @@ a{
 
 
 @media (max-width: 450px) {
- .button-carousel {
+ .button-carousel-right, .button-carousel-left {
   height: 30px;
   width: 30px;
   font-size: 1px;
+ }
+
+}
+@media (max-width: 380px){
+.button-carousel-left {
+  display: none;
  }
 }
