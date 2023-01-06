@@ -1,0 +1,39 @@
+.label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    font-size: large;
+    padding: .5rem;
+}
+
+.input {
+    border-radius: 8px;
+    padding: .3rem;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.textarea {
+    height: 300px;
+    padding: .3rem;
+
+    border-radius: 8px;
+    margin-top: 10px;
+
+
+}
+
+.submit-button {
+    max-width: 600px;
+    padding: .3rem;
+
+    height: 50px;
+    font-size: 16px;
+    background-color: gray;
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
