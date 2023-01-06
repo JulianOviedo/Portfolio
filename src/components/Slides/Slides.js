@@ -23,15 +23,14 @@ export default function Slides() {
         <Card
           title="Personal Proyects"
         >
-          <div className={styles.video}> <video muted autoPlay loop width={600} height={350}>
+          <div className={styles.video}> <video muted autoPlay loop width="90%" height="100%">
             <source src={'/shoesShop-video.mp4'} type="video/mp4" />
-            <p>Description of the video...</p>
           </video></div>
           <p className={styles['card-description']}> 📚 Shoes Shop - Ecommerce mock <br /><br /> -A responsive app created by Next.js using Next-auth for management the authentication and mainly React.js and MUI, also other libraries like Axios & ReactQuery to connect the API to the app.   <br /><br /> 📂 To see the code <a href='https://github.com/JulianOviedo/Shoes-Shop'>Click here!</a></p>
           <p className={styles.p}> 🖥️ To see deployment <a href='www.shoes-shop-kyl2.vercel.app'>Go here!</a></p>
           <hr />
           <br />
-          <div className={styles.video}> <video muted autoPlay loop width={600} height={350}>
+          <div className={styles.video}> <video muted autoPlay loop width="90%"  height="100%">
             <source src={'/Calculator-video.mp4'} type="video/mp4" />
           </video></div>
           <p className={styles['card-description']}> 📚 Calculator App <br /><br /> Just a Calculator with the android mobile design with MUI and React.js<br /><br /> 📂 To see the code <a href='https://github.com/JulianOviedo/CalculatorApp'>Click here!</a></p>

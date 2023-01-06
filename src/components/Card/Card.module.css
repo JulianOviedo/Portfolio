@@ -1,5 +1,5 @@
 .card {
-    max-width: 750px;
+    width: 100%;
     height: 100%;
     border: 2px dashed #ffffff;
     border-radius: 10px;
@@ -7,7 +7,6 @@
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    margin-left: 30px;
     margin-top: 5px;
     overflow-y: auto
 }
@@ -47,3 +46,4 @@
     padding: 10px;
     border-bottom: 1px solid #ffffff;
 }
+

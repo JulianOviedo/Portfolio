@@ -9,6 +9,7 @@
 .video {
     display: flex;
     justify-content: center;
+    margin-top: .8rem;
 }
 
 .card-container {
@@ -26,4 +27,23 @@
     white-space: pre-wrap;
     text-indent: 0 !important;
     overflow-y: auto;
+}
+
+@media (max-width: 900px) {
+    .card-container {
+        width: 500px;
+        height: 350px;
+    }
+
+    ;
+}
+
+@media (max-width: 450px) {
+    .card-container {
+        width: 350px;
+        height: 350px;
+        padding: 5px
+    }
+
+    ;
 }

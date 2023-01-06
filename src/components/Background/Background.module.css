@@ -2,21 +2,9 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  overflow-y: scroll;
 }
 
 .main {
   height: 100vh;
   overflow: hidden;
-  overflow-y: scroll;
-
-}
-
-@media (max-width: 1000px) {
-  .container{
-    height: 100%;
-  }
-  .main{
-    height: 100%;
-  }
 }

@@ -15,36 +15,12 @@ function Carousel({ children }) {
         itemsToScroll={1}
         forwardBtnProps={{
           // here you can also pass className, or any other button element attributes
-          style: {
-            alignSelf: 'center',
-            background: 'gray',
-            border: 'none',
-            borderRadius: '50%',
-            color: 'black',
-            cursor: 'pointer',
-            fontSize: '20px',
-            height: 50,
-            lineHeight: 1,
-            textAlign: 'center',
-            width: 50
-          },
-          children: <KeyboardDoubleArrowRightIcon />
+          className:'button-carousel',
+          children: <KeyboardDoubleArrowRightIcon/>
         }}
         backwardBtnProps={{
           // here you can also pass className, or any other button element attributes
-          style: {
-            alignSelf: 'center',
-            background: 'gray',
-            border: 'none',
-            borderRadius: '50%',
-            color: 'black',
-            cursor: 'pointer',
-            fontSize: '20px',
-            height: 50,
-            lineHeight: 1,
-            textAlign: 'center',
-            width: 50
-          },
+          className:'button-carousel',
           children: <KeyboardDoubleArrowLeftIcon />
         }}
         responsiveProps={[
