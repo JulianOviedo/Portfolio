@@ -1,10 +1,19 @@
 .container {
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   overflow: auto;
 }
 
 .main {
-  height: 100%;
+  height: 100vh;
   overflow: auto;
+}
+
+@media (max-width: 1000px) {
+  .container{
+    height: 100%;
+  }
+  .main{
+    height: 100%;
+  }
 }
