@@ -10,18 +10,20 @@
     justify-content: center;
 
 }
-.contact-container__info{
+
+.contact-container__info {
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-.contact-container__info-container{
+
+.contact-container__info-container {
     width: 500px;
     height: 300px;
 }
 
-.contact-container__info-card{
+.contact-container__info-card {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -33,7 +35,7 @@
     text-align: center;
     padding: 2rem;
     padding-top: 80px;
-    
+
 }
 
 .form {
@@ -48,3 +50,8 @@
     left: 0;
 }
 
+@media (max-width: 800px) {
+    .footer {
+        /* display: none; */
+    }
+}
