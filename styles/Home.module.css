@@ -62,6 +62,8 @@
 
 
 
-
-
-
+@media (max-width: 1000px) {
+  .avatar-container {
+    display: none;
+  }
+ }
