@@ -4,7 +4,8 @@ import styles from '../styles/contact.module.css'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast'
-import Card from '../src/components/Card/Card'
+// import Card from '../src/components/Card/Card'
+import PrimaryInput from '../src/components/PrimaryInput/PrimaryInput';
 
 export default function Contact() {
   const form = useRef();
@@ -34,33 +35,25 @@ export default function Contact() {
     e.target.reset()
   };
   return (
-    <div className={styles['contact-container']}>
-      <div className={styles['contact-container__info']}>
-        <div className={styles['contact-container__info-container']}>
-        <Card title={'Personal info, just in case'}>
-          <ul className={styles['contact-container__info-card']}>
-            <li>E-mail ➡️ julianovie234@gmail.com</li>
-            <li>Celphone ➡️  +54 9 351 761-9357</li>
-          </ul>
-        </Card>
-        </div>
-      </div>
+    <>
+     {/* <div className={styles['contact-container']}>
+       <div className={styles['contact-container__info']}>
+         <div className={styles['contact-container__info-container']}>
+         <Card title={'Personal info, just in case'}>
+           <ul className={styles['contact-container__info-card']}>
+             <li>E-mail ➡️ julianovie234@gmail.com</li>
+             <li>Celphone ➡️  +54 9 351 761-9357</li>
+           </ul>
+         </Card>
+         </div>
+       </div> */}
       <div className={styles['contact-container__form']}>
         <h1 className={styles.h1}>You can contact me through this form:</h1>
         <form ref={form} onSubmit={sendEmail} className={styles.form}>
-          <label>
-            <p className={styles['form-label']}>Name *</p>
-            <input type="text" name="user_name" required className={styles.input} />
-          </label>
-          <label>
-            <p className={styles['form-label']}>Email *</p>
-            <input type="email" name="user_email" required className={styles.input} />
-          </label>
-          <label>
-            <p className={styles['form-label']}>Message *</p>
-            <textarea name="message" required className={styles.textarea} />
-          </label>
-          <input type='submit' className={styles['form-button']} value='Send Email' />
+          <PrimaryInput  type='text' label='Name *' name='user_name' placeholder={'Write your name'}/>
+          <PrimaryInput  type='email' label='Email *' name='user_email' placeholder='Write your email' />
+          <PrimaryInput  type='textarea' label='Message *' name='message'/>
+          <PrimaryInput  type='submit' value='Send Email'/>
         </form>
       </div>
         <footer className={styles.footer}>
@@ -70,6 +63,7 @@ export default function Contact() {
             }}></ArrowBackIosNewIcon>
           </Link>
         </footer>
-    </div>
+    {/* </div> */}
+    </>
   )
 }
