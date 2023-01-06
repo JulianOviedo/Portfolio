@@ -14,6 +14,7 @@ export default function Background({ children }) {
           THREE,
           mouseControls: true,
           touchControls: true,
+          forceAnimate: true,
           gyroControls: false,
           minHeight: 200.00,
           minWidth: 200.00,
