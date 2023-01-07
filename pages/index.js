@@ -7,6 +7,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -23,19 +24,21 @@ export default function Home() {
       <footer className={styles.footer}>
         <div className={styles['footer-social-media']}>
           <SocialMedia link='https://www.linkedin.com/in/julian-oviedo-17b605136/' >
-            <LinkedInIcon sx={{ fontSize: "40px" }}/>
+            <LinkedInIcon sx={{ fontSize: "40px" }} />
           </SocialMedia>
           <SocialMedia link='https://www.facebook.com/julian.oviedo.7' >
-            <FacebookIcon sx={{ fontSize: "40px" }}/>
+            <FacebookIcon sx={{ fontSize: "40px" }} />
           </SocialMedia>
           <SocialMedia link='https://www.instagram.com/julian.oviedo.7/' >
-            <InstagramIcon sx={{ fontSize: "40px" }}/>
+            <InstagramIcon sx={{ fontSize: "40px" }} />
           </SocialMedia>
           <SocialMedia link='https://github.com/JulianOviedo' >
-            <GitHubIcon sx={{ fontSize: "40px" }}/>
+            <GitHubIcon sx={{ fontSize: "40px" }} />
           </SocialMedia>
         </div>
-        <Button > Contact Me </Button>
+        <Button >
+          <Link href="/contact" style={{ textDecoration: 'none', color: 'black' }}> Contact Me </Link>
+        </Button>
       </footer>
     </>
   )

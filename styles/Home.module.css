@@ -70,8 +70,16 @@
  }
 
  
-@media (max-width: 400px)   {
+@media (max-width: 500px)   {
   .footer-social-media {
-    padding-right: 0;
+    display: none;
+  }
+  .h1{
+    font-size: 1.5em;
+  }
+  .footer {
+    position: static;
+    display: flex;
+    justify-content: center;
   }
  }
