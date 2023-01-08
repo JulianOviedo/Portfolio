@@ -67,6 +67,9 @@
   .avatar-container {
     display: none;
   }
+  .footer{
+    margin: 0;
+  }
  }
 
  
