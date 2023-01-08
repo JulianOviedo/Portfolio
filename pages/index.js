@@ -37,7 +37,7 @@ export default function Home() {
           </SocialMedia>
         </div>
         <Button >
-          <Link href="/contact" style={{ textDecoration: 'none', color: 'black' }}> Contact Me </Link>
+          <Link href="/contact" style={{ textDecoration: 'none', color: 'black', width:'100%' }}> Contact Me </Link>
         </Button>
       </footer>
     </>
