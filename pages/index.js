@@ -1,4 +1,4 @@
-import { Avatar } from '@mui/material'
+import { Avatar, CircularProgress } from '@mui/material'
 import Button from '../src/components/Button/Button'
 import styles from '../styles/Home.module.css'
 import Slides from '../src/components/Slides/Slides'
@@ -8,8 +8,15 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Link from 'next/link'
+import { useState } from 'react'
 
 export default function Home() {
+
+const [isLoading, setIsLoading] = useState(null)
+const handleClick = function handleClick () {
+  setIsLoading(true)
+}
+
   return (
     <>
       <header className={styles['avatar-container']}>
@@ -36,8 +43,8 @@ export default function Home() {
             <GitHubIcon sx={{ fontSize: "40px" }} />
           </SocialMedia>
         </div>
-        <Button >
-          <Link href="/contact" style={{ textDecoration: 'none', color: 'black', width:'100%' }}> Contact Me </Link>
+        <Button onClick={handleClick}>
+          <Link href="/contact" style={{ textDecoration: 'none', color: 'black', width:'100%' }}> {isLoading ? <CircularProgress size='1rem'/> : 'Contact Me'} </Link>
         </Button>
       </footer>
     </>
