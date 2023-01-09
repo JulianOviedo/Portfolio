@@ -15,12 +15,12 @@ function Carousel({ children }) {
         itemsToScroll={1}
         forwardBtnProps={{
           // here you can also pass className, or any other button element attributes
-          className:'button-carousel-right',
+          className: 'button-carousel-right',
           children: <KeyboardDoubleArrowRightIcon/>
         }}
         backwardBtnProps={{
           // here you can also pass className, or any other button element attributes
-          className:'button-carousel-left',
+          className: 'button-carousel-left',
           children: <KeyboardDoubleArrowLeftIcon />
         }}
         responsiveProps={[

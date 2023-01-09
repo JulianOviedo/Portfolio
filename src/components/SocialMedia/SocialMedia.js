@@ -1,11 +1,11 @@
-import Link from 'next/link';
+import Link from 'next/link'
 
-export default function SocialMedia ({link, children}) {
-    return (
-        <div >
-            <Link href={link}>
-                {children}
-            </Link>
-            </div>
-    )
+export default function SocialMedia ({ link, children }) {
+  return (
+    <div >
+      <Link href={link}>
+        {children}
+      </Link>
+    </div>
+  )
 }

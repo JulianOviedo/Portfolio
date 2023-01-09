@@ -30,7 +30,7 @@ export default function Slides() {
           <p className={styles.p}> 🖥️ To see deployment <a href='www.shoes-shop-kyl2.vercel.app'>Go here!</a></p>
           <hr />
           <br />
-          <div className={styles.video}> <video muted autoPlay loop width="90%"  height="100%">
+          <div className={styles.video}> <video muted autoPlay loop width="90%" height="100%">
             <source src={'/Calculator-video.mp4'} type="video/mp4" />
           </video></div>
           <p className={styles['card-description']}> 📚 Calculator App <br /><br /> Just a Calculator with the android mobile design with MUI and React.js<br /><br /> 📂 To see the code <a href='https://github.com/JulianOviedo/CalculatorApp'>Click here!</a></p>

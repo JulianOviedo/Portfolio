@@ -23,7 +23,8 @@
             2
         ],
         "camelcase": "off",
-        "react/no-unescaped-entities": "off"
-    },
-    "space-before-function-paren": "off"
+        "react/no-unescaped-entities": "off",
+        "quotes": [2, "single", { "avoidEscape": true }],
+        "space-before-function-paren": "off"
+    }
 }

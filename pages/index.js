@@ -3,19 +3,18 @@ import Button from '../src/components/Button/Button'
 import styles from '../styles/Home.module.css'
 import Slides from '../src/components/Slides/Slides'
 import SocialMedia from '../src/components/SocialMedia/SocialMedia'
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import FacebookIcon from '@mui/icons-material/Facebook'
+import InstagramIcon from '@mui/icons-material/Instagram'
+import GitHubIcon from '@mui/icons-material/GitHub'
 import Link from 'next/link'
 import { useState } from 'react'
 
 export default function Home() {
-
-const [isLoading, setIsLoading] = useState(null)
-const handleClick = function handleClick () {
-  setIsLoading(true)
-}
+  const [isLoading, setIsLoading] = useState(null)
+  const handleClick = function handleClick() {
+    setIsLoading(true)
+  }
 
   return (
     <>
@@ -31,20 +30,20 @@ const handleClick = function handleClick () {
       <footer className={styles.footer}>
         <div className={styles['footer-social-media']}>
           <SocialMedia link='https://www.linkedin.com/in/julian-oviedo-17b605136/' >
-            <LinkedInIcon sx={{ fontSize: "40px" }} />
+            <LinkedInIcon sx={{ fontSize: '40px' }} />
           </SocialMedia>
           <SocialMedia link='https://www.facebook.com/julian.oviedo.7' >
-            <FacebookIcon sx={{ fontSize: "40px" }} />
+            <FacebookIcon sx={{ fontSize: '40px' }} />
           </SocialMedia>
           <SocialMedia link='https://www.instagram.com/julian.oviedo.7/' >
-            <InstagramIcon sx={{ fontSize: "40px" }} />
+            <InstagramIcon sx={{ fontSize: '40px' }} />
           </SocialMedia>
           <SocialMedia link='https://github.com/JulianOviedo' >
-            <GitHubIcon sx={{ fontSize: "40px" }} />
+            <GitHubIcon sx={{ fontSize: '40px' }} />
           </SocialMedia>
         </div>
         <Button onClick={handleClick}>
-          <Link href="/contact" style={{ textDecoration: 'none', color: 'black', width:'100%' }}> {isLoading ? <CircularProgress size='1rem'/> : 'Contact Me'} </Link>
+          <Link href="/contact" style={{ textDecoration: 'none', color: 'black', width: '100%' }}> {isLoading ? <CircularProgress size='1rem' /> : 'Contact Me'} </Link>
         </Button>
       </footer>
     </>
