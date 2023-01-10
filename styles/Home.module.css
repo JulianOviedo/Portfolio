@@ -75,7 +75,9 @@
  
 @media (max-width: 500px)   {
   .footer-social-media {
-    display: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
   }
   .h1{
     font-size: 1.5em;
@@ -84,5 +86,6 @@
     position: static;
     display: flex;
     justify-content: center;
+    flex-direction: column-reverse;
   }
  }
