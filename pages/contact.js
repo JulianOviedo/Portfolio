@@ -39,7 +39,7 @@ export default function Contact() {
       <div className={styles['contact-container']}>
         <div className={styles['contact-container__info']}>
           <div className={styles['contact-container__info-container']}>
-            <Card title={'Personal info, just in case'}>
+            <Card title={'Personal data'}>
               <ul className={styles['contact-container__info-card']}>
                 <li>E-mail ➡️ julianovie234@gmail.com</li>
                 <li>Celphone ➡️  +54 9 351 761-9357</li>
