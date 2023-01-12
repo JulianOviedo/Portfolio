@@ -38,15 +38,13 @@ export default function Contact() {
   return (
     <>
       <div className={styles['contact-container']}>
-        <div className={styles['contact-container__info']}>
-          <div className={styles['contact-container__info-container']}>
-            <Card title={'Personal data'}>
-              <ul className={styles['contact-container__info-card']}>
-                <li>E-mail ➡️ julianovie234@gmail.com</li>
-                <li>Celphone ➡️  +54 9 351 761-9357</li>
-              </ul>
-            </Card>
-          </div>
+        <div className={styles['contact-container__info-container']}>
+          <Card title={'Personal data'}>
+            <ul className={styles['contact-container__info-card']}>
+              <li>E-mail ➡️ julianovie234@gmail.com</li>
+              <li>Celphone ➡️  +54 9 351 761-9357</li>
+            </ul>
+          </Card>
         </div>
         <div className={styles['contact-container__form']}>
           <h1 className={styles.h1}>Contact me</h1>
