@@ -3,6 +3,8 @@
     text-align: center;
 }
 
+
+
 .cvs-container{
     display: flex;
     justify-content: center;
@@ -15,6 +17,8 @@
     padding: 10px;
     text-decoration: none;
     color: #ffffff;
+    display: flex;
+    justify-content: center;
 
 }
 

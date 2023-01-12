@@ -7,6 +7,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import InstagramIcon from '@mui/icons-material/Instagram'
 import GitHubIcon from '@mui/icons-material/GitHub'
+import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import Link from 'next/link'
 import { useState } from 'react'
 
@@ -23,8 +24,8 @@ export default function Home() {
       </header>
       <h1 className={styles.h1}>Julian Oviedo Portfolio</h1>
       <div className={styles['cvs-container']}>
-        <a className={styles['cvs-download']} download="downloadResumeSpanish" href="/Cv Julian Oviedo Spanish.pdf">Cv Spanish</a>
-        <a className={styles['cvs-download']} download="downloadResumeEnglish" href="/Cv Julian Oviedo English.pdf">Cv English</a>
+        <a className={styles['cvs-download']} download="downloadResumeSpanish" href="/Cv Julian Oviedo Spanish.pdf">Cv Spanish <FileDownloadIcon sx={{ml:'5px'}}/></a>
+        <a className={styles['cvs-download']} download="downloadResumeEnglish" href="/Cv Julian Oviedo English.pdf">Cv English <FileDownloadIcon sx={{ml:'5px'}}/></a>
       </div>
       <Slides />
       <footer className={styles.footer}>
