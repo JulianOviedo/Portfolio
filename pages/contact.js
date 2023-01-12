@@ -48,7 +48,7 @@ export default function Contact() {
           </div>
         </div>
         <div className={styles['contact-container__form']}>
-          <h1 className={styles.h1}>You can contact me through this form:</h1>
+          <h1 className={styles.h1}>Contact me</h1>
           <form ref={form} onSubmit={sendEmail} className={styles.form}>
             <PrimaryInput type='text' label='Name *' name='user_name' placeholder={'Write your name'}/>
             <PrimaryInput type='email' label='Email *' name='user_email' placeholder='Write your email' />
