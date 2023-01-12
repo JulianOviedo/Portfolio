@@ -1,0 +1,16 @@
+.textarea{
+    border-radius: 8px;
+    padding: .5rem;
+    height: 50px;
+    margin-top: 10px;
+    height: 300px;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    font-size: large;
+    padding: 1rem;
+}

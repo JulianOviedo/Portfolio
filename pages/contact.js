@@ -6,6 +6,7 @@ import emailjs from '@emailjs/browser'
 import toast from 'react-hot-toast'
 import Card from '../src/components/Card/Card'
 import PrimaryInput from '../src/components/PrimaryInput/PrimaryInput'
+import Textarea from '../src/components/Textarea/Textarea'
 
 export default function Contact() {
   const form = useRef()
@@ -52,7 +53,7 @@ export default function Contact() {
           <form ref={form} onSubmit={sendEmail} className={styles.form}>
             <PrimaryInput type='text' label='Name *' name='user_name' placeholder={'Write your name'}/>
             <PrimaryInput type='email' label='Email *' name='user_email' placeholder='Write your email' />
-            <PrimaryInput type='textarea' label='Message *' name='message'/>
+            <Textarea type='textarea' label='Message *' name='message'/>
             <PrimaryInput type='submit' value='Send Email'/>
           </form>
         </div>

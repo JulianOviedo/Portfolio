@@ -14,14 +14,6 @@
     margin-top: 10px;
 }
 
-.textarea {
-    height: 300px;
-    padding: .3rem;
-    border-radius: 8px;
-    margin-top: 10px;
-    text-align: start;
-}
-
 .submit-button {
     max-width: 600px;
     padding: .3rem;

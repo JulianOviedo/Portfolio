@@ -1,14 +1,14 @@
 import styles from './PrimaryInput.module.css'
 
-export default function PrimaryInput({ label, placeholder, type, name }) {
+export default function PrimaryInput({ label, placeholder, type, name, value }) {
   return (
     <label className={styles.label}>
       <p>{label}</p>
       <input
         type={type}
-        className={type === 'textarea'
-          ? styles.textarea
-          : type === 'submit'
+        value={value}
+        className={
+          type === 'submit'
             ? styles['submit-button']
             : styles.input}
         name={name}
