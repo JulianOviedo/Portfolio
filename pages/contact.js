@@ -30,7 +30,7 @@ export default function Contact() {
       {
         loading: 'Sending...',
         success: <b>Email was sended !</b>,
-        error: <b>The Email send failed, try again later</b>
+        error: <b>The Email send failed, try again latr</b>
       }
     )
     e.target.reset()
