@@ -20,7 +20,6 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hot-toast": "^2.4.0",
-    "react-simply-carousel": "^8.4.1",
     "three": "^0.147.0",
     "vanta": "^0.5.24"
   },
