@@ -1,43 +1,85 @@
 import { useState } from 'react'
-import ReactSimplyCarousel from 'react-simply-carousel'
-import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft'
-import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight'
+import ArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft'
+import ArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight'
+
+import styles from './Carousel.module.css'
+import { Box } from '@mui/material'
 
 function Carousel({ children }) {
-  const [activeSlideIndex, setActiveSlideIndex] = useState(0)
+  // wich slide should display && animation effect
+
+  const [currentIndex, setCurrentIndex] = useState(0)
+
+  const [animating, setAnimating] = useState(false)
+
+  const next = () => {
+    setAnimating(true)
+    setTimeout(() => {
+      setCurrentIndex(currentIndex + 1 >= children.length ? 0 : currentIndex + 1)
+      setAnimating(false)
+    }, 500)
+  }
+
+  const prev = () => {
+    setAnimating(true)
+    setTimeout(() => {
+      setCurrentIndex(currentIndex - 1 < 0 ? children.length - 1 : currentIndex - 1)
+      setAnimating(false)
+    }, 500)
+  }
+
+  // to change slide with mouse or screen scroll in mobile
+
+  const [dragging, setDragging] = useState(false)
+  const [startX, setStartX] = useState(0)
+
+  const handleMouseDown = (e) => {
+    setDragging(true)
+    setStartX(e.clientX)
+  }
+
+  const handleMouseUp = () => {
+    setDragging(false)
+  }
+
+  const handleMouseMove = (e) => {
+    if (!dragging) return
+    if (e.clientX - startX > 50) {
+      prev()
+      setDragging(false)
+    } else if (e.clientX - startX < -50) {
+      next()
+      setDragging(false)
+    }
+  }
 
   return (
-    <div>
-      <ReactSimplyCarousel
-        activeSlideIndex={activeSlideIndex}
-        onRequestChange={setActiveSlideIndex}
-        itemsToShow={1}
-        itemsToScroll={1}
-        forwardBtnProps={{
-          // here you can also pass className, or any other button element attributes
-          className: 'button-carousel-right',
-          children: <KeyboardDoubleArrowRightIcon/>
-        }}
-        backwardBtnProps={{
-          // here you can also pass className, or any other button element attributes
-          className: 'button-carousel-left',
-          children: <KeyboardDoubleArrowLeftIcon />
-        }}
-        responsiveProps={[
-          {
-            itemsToShow: 1,
-            itemsToScroll: 1,
-            minWidth: 750
-          }
-        ]}
-        speed={400}
-        easing="linear"
-      >
-        {/* here you can also pass any other element attributes. Also, you can use your custom components as slides */}
-        {children}
-      </ReactSimplyCarousel>
-    </div>
+    <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+      <div className={styles.carousel}>
+        <ArrowLeftIcon fontSize='large' onClick={next} />
+        <div
+          className={`${styles['slides-container']} ${animating ? styles.animating : ''}`}
+          onMouseDown={handleMouseDown}
+          onMouseUp={handleMouseUp}
+          onMouseMove={handleMouseMove}
+        >
+          {children[currentIndex]}
+        </div>
+        <ArrowRightIcon fontSize='large' onClick={prev} />
+      </div>
+      <Box>
+        <div className={styles['dots-container']}>
+          {children.map((_, index) => (
+            <div
+              key={index}
+              className={`${styles.dot} ${currentIndex === index ? styles.active : ''}`}
+            />
+          ))}
+        </div>
+      </Box>
+    </Box>
   )
-}
+};
 
 export default Carousel
+// desinstalar carousel
