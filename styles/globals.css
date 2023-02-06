@@ -11,35 +11,25 @@ body {
   color: #ffffff;
 }
 
-a{
+a {
   color: #ffffff;
 }
 
-.button-carousel-right, .button-carousel-left {
-    align-self: center;
-    background: gray;
-    border: none;
-    border-radius: 50%;
-    color: black;
-    cursor: pointer;
-    font-size: 20px;
-    height: 50px;
-    line-height: 1;
-    text-align: center;
-    width: 50px;
-}
 
 
 @media (max-width: 450px) {
- .button-carousel-right, .button-carousel-left {
-  height: 30px;
-  width: 30px;
-  font-size: 1px;
- }
+
+  .button-carousel-right,
+  .button-carousel-left {
+    height: 30px;
+    width: 30px;
+    font-size: 1px;
+  }
 
 }
-@media (max-width: 380px){
-.button-carousel-left {
-  display: none;
- }
+
+@media (max-width: 380px) {
+  .button-carousel-left {
+    display: none;
+  }
 }
