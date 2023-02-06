@@ -4,6 +4,8 @@ import { useEffect } from 'react'
 import '../styles/globals.css'
 import Background from '../src/components/Background/Background'
 import { Toaster } from 'react-hot-toast'
+import { theme } from '../mui-theme'
+import { ThemeProvider } from '@emotion/react'
 
 const font = Roboto_Mono({ subsets: ['latin'] })
 
@@ -28,12 +30,14 @@ export default function App({ Component, pageProps }) {
         <title>Julian Oviedo Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Background>
-        <main className={font.className}>
-          <div><Toaster /></div>
-          <Component {...pageProps} />
-        </main>
-      </Background>
+      <ThemeProvider theme={theme}>
+        <Background>
+          <main className={font.className}>
+            <div><Toaster /></div>
+            <Component {...pageProps} />
+          </main>
+        </Background>
+      </ThemeProvider>
     </>
   )
 }
