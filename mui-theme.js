@@ -4,7 +4,6 @@ export const theme = createTheme({
   typography: {
     download: {
       margin: '10px',
-      width: '100%',
       border: '2px solid #ffffff',
       borderRadius: '10px',
       padding: '15px',
@@ -42,7 +41,7 @@ export const theme = createTheme({
 
 theme.typography.h1 = {
   fontWeight: 'bold',
-  fontSize: '2em',
+  fontSize: '1.8em',
   [theme.breakpoints.down('md')]: {
     // fontSize: '35px',
     // fontWeight: 700
