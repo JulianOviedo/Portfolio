@@ -82,4 +82,3 @@ function Carousel({ children }) {
 };
 
 export default Carousel
-// desinstalar carousel
