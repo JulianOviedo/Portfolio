@@ -42,7 +42,7 @@ export default function Contact() {
           <Typography variant='h1' sx={{
             textAlign: 'center',
             mt: '50px',
-            [theme.breakpoints.down('md')]: {
+            [theme.breakpoints.down('740')]: {
               mt: '0'
             }
           }}> Contact</Typography>

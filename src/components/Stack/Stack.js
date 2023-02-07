@@ -12,7 +12,7 @@ const Stack = () => {
     <>
       <Container sx={{
         position: 'relative',
-        [theme.breakpoints.down('md')]: {
+        [theme.breakpoints.down('740')]: {
           height: 650
         }
       }}>

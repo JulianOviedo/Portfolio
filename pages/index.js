@@ -16,7 +16,7 @@ export default function Home() {
         gridTemplateColumns: '50% 50%',
         mt: '100px',
         py: '24px',
-        [theme.breakpoints.down('md')]: {
+        [theme.breakpoints.down('740')]: {
           display: 'flex',
           flexDirection: 'column'
         }
