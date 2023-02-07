@@ -8,7 +8,7 @@ export const theme = createTheme({
   breakpoints: {
     values: {
       xs: 0,
-      425: 425, // MOBILE
+      400: 400, // MOBILE
       550: 550,
       740: 740,
       900: 900, // TABLET
@@ -33,6 +33,7 @@ theme.typography.download = {
   textDecoration: 'none',
   display: 'flex',
   justifyContent: 'center',
+  alignItems: 'center',
   '&:hover': {
     animation: 'pulse 1.5s',
     cursor: 'pointer'
@@ -57,7 +58,7 @@ theme.typography.download = {
 
 theme.typography.contact = {
   fontSize: '10px',
-  [theme.breakpoints.down('425')]: {
+  [theme.breakpoints.down('400')]: {
     fontSize: '5px'
   }
 

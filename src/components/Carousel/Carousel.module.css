@@ -9,7 +9,7 @@
     transition: transform 0.5s ease;
     display: flex;
     justify-content: center;
-    width: 800px;
+    width: 850px;
 }
 
 .animating {
@@ -46,14 +46,12 @@
 @media (max-width: 660px) {
     .slides-container {
         width: 450px;
-        height: 650px;
     }
 }
 
 @media (max-width: 540px) {
     .slides-container {
         width: 330px;
-        height: 650px;
     }
 }
 

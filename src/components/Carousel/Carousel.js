@@ -3,9 +3,11 @@ import ArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft'
 import ArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight'
 
 import styles from './Carousel.module.css'
-import { Box } from '@mui/material'
+import { Box, useTheme } from '@mui/material'
 
 function Carousel({ children }) {
+  const theme = useTheme()
+
   // wich slide should display && animation effect
 
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -56,7 +58,11 @@ function Carousel({ children }) {
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
       <div className={styles.carousel}>
-        <ArrowLeftIcon fontSize='large' onClick={prev} />
+        <ArrowLeftIcon sx={{
+          [theme.breakpoints.down('400')]: {
+            display: 'none'
+          }
+        }} fontSize='large' onClick={prev} />
         <div
           className={`${styles['slides-container']} ${animating ? styles.animating : ''}`}
           onMouseDown={handleMouseDown}
@@ -65,7 +71,11 @@ function Carousel({ children }) {
         >
           {children[currentIndex]}
         </div>
-        <ArrowRightIcon fontSize='large' onClick={next} />
+        <ArrowRightIcon sx={{
+          [theme.breakpoints.down('400')]: {
+            display: 'none'
+          }
+        }} fontSize='large' onClick={next} />
       </div>
       <Box>
         <div className={styles['dots-container']}>
