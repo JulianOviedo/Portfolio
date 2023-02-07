@@ -18,3 +18,16 @@
         transform: translate(0, 0px);
     }
 }
+
+.skill:hover::after {
+    transform: translateX(-50%);
+    position: absolute;
+    background-color: gray;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    width: auto;
+    height: 50px;
+}
