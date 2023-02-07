@@ -56,7 +56,7 @@ function Carousel({ children }) {
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
       <div className={styles.carousel}>
-        <ArrowLeftIcon fontSize='large' onClick={next} />
+        <ArrowLeftIcon fontSize='large' onClick={prev} />
         <div
           className={`${styles['slides-container']} ${animating ? styles.animating : ''}`}
           onMouseDown={handleMouseDown}
@@ -65,7 +65,7 @@ function Carousel({ children }) {
         >
           {children[currentIndex]}
         </div>
-        <ArrowRightIcon fontSize='large' onClick={prev} />
+        <ArrowRightIcon fontSize='large' onClick={next} />
       </div>
       <Box>
         <div className={styles['dots-container']}>
