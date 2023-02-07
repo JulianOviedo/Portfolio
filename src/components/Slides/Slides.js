@@ -25,7 +25,7 @@ export default function Slides() {
           title="Personal Proyects"
         >
           <div className={styles.video}>
-            <CircularProgress sx={{ zIndex: '-1000', position: 'absolute', top: '50%', right: '50%' }}/>
+            <CircularProgress sx={{ zIndex: '-10', position: 'absolute' }}/>
             <video muted autoPlay loop width="90%" height="100%">
               <source src={'/shoesShop-video.mp4'} type="video/mp4" />
             </video>
@@ -35,7 +35,7 @@ export default function Slides() {
           <hr />
           <br />
           <div className={styles.video}>
-            <CircularProgress sx={{ zIndex: '-1000', position: 'absolute', top: '50%', right: '50%' }}/>
+            <CircularProgress sx={{ zIndex: '-10', position: 'absolute' }}/>
             <video muted autoPlay loop width="90%" height="100%">
               <source src={'/Calculator-video.mp4'} type="video/mp4" />
             </video>
