@@ -2,7 +2,7 @@
   width: 100vw;
   padding: 0;
   margin: 0;
-  background-color: red;
+  background-color: black;
   /*Cover use when the animation doesn't work. ex:mobile*/
   overflow: hidden;
   overflow-y: auto;
