@@ -35,21 +35,21 @@ function Carousel({ children }) {
   const [dragging, setDragging] = useState(false)
   const [startX, setStartX] = useState(0)
 
-  const handleMouseDown = (e) => {
+  const handleTouchStart = (e) => {
     setDragging(true)
-    setStartX(e.clientX)
+    setStartX(e.touches[0].clientX)
   }
 
-  const handleMouseUp = () => {
+  const handleTouchEnd = () => {
     setDragging(false)
   }
 
-  const handleMouseMove = (e) => {
+  const handleTouchMove = (e) => {
     if (!dragging) return
-    if (e.clientX - startX > 50) {
+    if (e.touches[0].clientX - startX > 50) {
       prev()
       setDragging(false)
-    } else if (e.clientX - startX < -50) {
+    } else if (e.touches[0].clientX - startX < -50) {
       next()
       setDragging(false)
     }
@@ -65,9 +65,10 @@ function Carousel({ children }) {
         }} fontSize='large' onClick={prev} />
         <div
           className={`${styles['slides-container']} ${animating ? styles.animating : ''}`}
-          onMouseDown={handleMouseDown}
-          onMouseUp={handleMouseUp}
-          onMouseMove={handleMouseMove}
+          onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchEnd}
+          onTouchMove={handleTouchMove}
+
         >
           {children[currentIndex]}
         </div>
