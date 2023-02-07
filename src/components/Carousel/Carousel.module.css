@@ -7,6 +7,8 @@
 
 .slides-container {
     transition: transform 0.5s ease;
+    display: flex;
+    justify-content: center;
     width: 800px;
 }
 
@@ -32,4 +34,33 @@
 .dot.active {
     background-color: rgb(83, 82, 82);
     transform: scale(1.5);
+}
+
+
+@media (max-width: 900px) {
+    .slides-container {
+        width: 550px;
+    }
+}
+
+@media (max-width: 660px) {
+    .slides-container {
+        width: 450px;
+        height: 650px;
+    }
+}
+
+@media (max-width: 540px) {
+    .slides-container {
+        width: 330px;
+        height: 650px;
+    }
+}
+
+@media (max-width: 450px) {
+    .card-container {
+        width: 320px;
+        height: 500px;
+        padding: 5px
+    }
 }
