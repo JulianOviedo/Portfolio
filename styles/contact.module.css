@@ -54,9 +54,9 @@
     left: 0;
 }
 
-@media (max-width: 800px) {
-    .footer {
-        display: none;
+@media (max-width: 900px) {
+    .contact-container {
+        align-items: center;
     }
 }
 
