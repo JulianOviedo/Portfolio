@@ -8,10 +8,11 @@ export const theme = createTheme({
   breakpoints: {
     values: {
       xs: 0,
-      sm: 425, // MOBILE
-      md: 740,
-      lg: 900, // TABLET
-      xl: 1440 // DESKTOP DESIGN
+      425: 425, // MOBILE
+      550: 550,
+      740: 740,
+      900: 900, // TABLET
+      1440: 1440 // DESKTOP DESIGN
     }
   }
 })
@@ -19,7 +20,7 @@ export const theme = createTheme({
 theme.typography.h1 = {
   fontWeight: 'bold',
   fontSize: '1.8em',
-  [theme.breakpoints.down('md')]: {
+  [theme.breakpoints.down('740')]: {
     fontSize: '1.5em'
   }
 }
@@ -49,14 +50,14 @@ theme.typography.download = {
       boxShadow: '0 0 0 0 rgba(#5a99d4, 0)'
     }
   },
-  [theme.breakpoints.down('md')]: {
+  [theme.breakpoints.down('740')]: {
     padding: '8px'
   }
 }
 
 theme.typography.contact = {
   fontSize: '10px',
-  [theme.breakpoints.down('sm')]: {
+  [theme.breakpoints.down('425')]: {
     fontSize: '5px'
   }
 
