@@ -18,7 +18,7 @@ export default function Home() {
         py: '24px',
         [theme.breakpoints.down('740')]: {
           display: 'flex',
-          flexDirection: 'column'
+          flexDirection: 'column-reverse'
         }
       }}>
         <Contact/>
