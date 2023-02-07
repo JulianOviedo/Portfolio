@@ -4,9 +4,11 @@ import emailjs from '@emailjs/browser'
 import toast from 'react-hot-toast'
 import PrimaryInput from '../PrimaryInput/PrimaryInput'
 import Textarea from '../Textarea/Textarea'
-import { Typography } from '@mui/material'
+import { Typography, useTheme } from '@mui/material'
 
 export default function Contact() {
+  const theme = useTheme()
+
   const form = useRef()
 
   const sendEmail = (e) => {
@@ -37,7 +39,13 @@ export default function Contact() {
     <>
       <div className={styles['contact-container']}>
         <div className={styles['contact-container__form']}>
-          <Typography variant='h1' sx={{ textAlign: 'center', mt: '50px' }}> Contact me</Typography>
+          <Typography variant='h1' sx={{
+            textAlign: 'center',
+            mt: '50px',
+            [theme.breakpoints.down('md')]: {
+              mt: '0'
+            }
+          }}> Contact</Typography>
           <form ref={form} onSubmit={sendEmail} className={styles.form}>
             <PrimaryInput type='text' label='Name *' name='user_name' placeholder={'Write your name'}/>
             <PrimaryInput type='email' label='Email *' name='user_email' placeholder='Write your email' />
