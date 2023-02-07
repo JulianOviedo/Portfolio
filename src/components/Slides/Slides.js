@@ -1,6 +1,7 @@
 import Carousel from '../Carousel/Carousel'
 import Card from '../Card/Card'
 import styles from '../Slides/Slides.module.css'
+import { CircularProgress } from '@mui/material'
 
 export default function Slides() {
   return (
@@ -25,6 +26,7 @@ export default function Slides() {
         >
           <div className={styles.video}>
             <video muted autoPlay loop width="90%" height="100%">
+              <CircularProgress sx={{ zIndex: '-1000', position: 'absolute', top: '50%', right: '50%' }}/>
               <source src={'/shoesShop-video.mp4'} type="video/mp4" />
             </video>
           </div>
@@ -34,6 +36,7 @@ export default function Slides() {
           <br />
           <div className={styles.video}>
             <video muted autoPlay loop width="90%" height="100%">
+              <CircularProgress sx={{ zIndex: '-1000', position: 'absolute', top: '50%', right: '50%' }}/>
               <source src={'/Calculator-video.mp4'} type="video/mp4" />
             </video>
           </div>
