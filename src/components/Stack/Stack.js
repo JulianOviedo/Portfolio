@@ -23,7 +23,7 @@ const Stack = () => {
         <Box className={styles.skill} sx={{ position: 'absolute', bottom: '30%', right: '20%', '&:hover::after': { content: '"Javascript"' } }}>
           <Image alt='Javascript' title='Javascript' src={`${baseURL}/javascript-colored.svg`} width={55} height={55}></Image>
         </Box>
-        <Box className={styles.skill} sx={{ position: 'absolute', bottom: '65%', right: '33%', '&:hover::after': { content: '"html"' } }}>
+        <Box className={styles.skill} sx={{ position: 'absolute', bottom: '65%', right: '33%', '&:hover::after': { content: '"HTML"' } }}>
           <Image alt='html' title='html' src={`${baseURL}/html5-colored.svg`} width={55} height={55}></Image>
         </Box>
         <Box className={styles.skill} sx={{ position: 'absolute', bottom: '45%', left: '23%', '&:hover::after': { content: '"React.js"' } }}>
