@@ -10,7 +10,7 @@ const Stack = () => {
 
   return (
     <>
-      <Container sx={{
+      <Container component='section' sx={{
         position: 'relative',
         [theme.breakpoints.down('740')]: {
           height: 650

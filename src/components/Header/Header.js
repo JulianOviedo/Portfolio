@@ -7,7 +7,7 @@ const Header = () => {
 
   return (
     <>
-      <Box sx={{
+      <Box component='header' sx={{
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',

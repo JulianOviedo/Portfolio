@@ -56,7 +56,7 @@ function Carousel({ children }) {
   }
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+    <Box component='section' sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
       <div className={styles.carousel}>
         <ArrowLeftIcon sx={{
           [theme.breakpoints.down('400')]: {
