@@ -50,6 +50,9 @@ const Stack = () => {
         <Box className={styles.skill} sx={{ position: 'absolute', bottom: '78%', right: '12%', '&:hover::after': { content: '"Node.js"' } }}>
           <Image alt='Node.js' title='Node.js' src={`${baseURL}/nodejs-colored.svg`} width={55} height={55}></Image>
         </Box>
+        <Box className={styles.skill} sx={{ position: 'absolute', bottom: '75%', right: '45%', '&:hover::after': { content: '"Node.js"' } }}>
+          <Image alt='Node.js' title='Node.js' src={`${baseURL}/tailwindcss-colored.svg`} width={55} height={55}></Image>
+        </Box>
       </Container>
     </>
   )
