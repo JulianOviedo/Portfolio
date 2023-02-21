@@ -25,7 +25,7 @@ export default function Slides() {
           title="Personal Proyects"
         >
           <div className={styles.video}>
-            <CircularProgress sx={{ zIndex: '-10', position: 'absolute' }}/>
+            <CircularProgress sx={{ zIndex: '-10', position: 'absolute' }} />
             <video muted autoPlay loop width="90%" height="100%">
               <source src={'/shoesShop-video.mp4'} type="video/mp4" />
             </video>
@@ -35,7 +35,7 @@ export default function Slides() {
           <hr />
           <br />
           <div className={styles.video}>
-            <CircularProgress sx={{ zIndex: '-10', position: 'absolute' }}/>
+            <CircularProgress sx={{ zIndex: '-10', position: 'absolute' }} />
             <video muted autoPlay loop width="90%" height="100%">
               <source src={'/Calculator-video.mp4'} type="video/mp4" />
             </video>
@@ -45,12 +45,12 @@ export default function Slides() {
           <hr />
           <br />
           <div className={styles.video}>
-            <CircularProgress sx={{ zIndex: '-10', position: 'absolute' }}/>
+            <CircularProgress sx={{ zIndex: '-10', position: 'absolute' }} />
             <video muted autoPlay loop width="90%" height="100%">
               <source src={'/movie-browser.mp4'} type="video/mp4" />
             </video>
           </div>
-          <p className={styles['card-description']}> 📚 <b>Movie Browser </b><br /><br/> Responsive Movie browser made with React. The main goal of this project was used the useMemo & useCallback hooks from React to avoid to fetch every mutation on the value of the controlled input. The API = https://www.omdbapi.com <br /><br /> 📂 To see the code <a href='https://github.com/JulianOviedo/Movie-Browser'>Click here!</a></p>
+          <p className={styles['card-description']}> 📚 <b>Movie Browser </b><br /><br /> Responsive Movie browser made with React. The main goal of this project was used the useMemo & useCallback hooks from React to avoid to fetch every mutation on the value of the controlled input. The API = https://www.omdbapi.com <br /><br /> 📂 To see the code <a href='https://github.com/JulianOviedo/Movie-Browser'>Click here!</a></p>
           <p className={styles.p}> 🖥️ To see deployment <a href='https://movie-browser-pi.vercel.app/'>Go here!</a></p>
         </Card>
       </div>
