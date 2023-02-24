@@ -38,7 +38,7 @@ const Stack = () => {
         <Box className={styles.skill} sx={{ position: 'absolute', bottom: '80%', left: '15%', '&:hover::after': { content: '"Bootstrap"' } }}>
           <Image alt='Bootstrap' title='Bootstrap' src={`${baseURL}/bootstrap-colored.svg`} width={55} height={55}></Image>
         </Box>
-        <Box className={styles.skill} sx={{ position: 'absolute', bottom: '72%', left: '33%', '&:hover::after': { content: '"MaterialUI"' } }}>
+        <Box className={styles.skill} sx={{ position: 'absolute', bottom: '62%', left: '9%', '&:hover::after': { content: '"MaterialUI"' } }}>
           <Image alt='Material UI' title='Material UI' src={`${baseURL}/materialui-colored.svg`} width={55} height={55}></Image>
         </Box>
         <Box className={styles.skill} sx={{ position: 'absolute', bottom: '10%', left: '43%', '&:hover::after': { content: '"Redux"' } }}>
