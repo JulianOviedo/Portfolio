@@ -1,0 +1,11 @@
+.proyect-bttn {
+    background-color: gray;
+    border: 1px solid black;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    padding: 15px;
+    font-weight: bold;
+    width: 150px;
+    text-align: center;
+}

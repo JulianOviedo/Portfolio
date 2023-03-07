@@ -2,6 +2,7 @@ import Carousel from '../Carousel/Carousel'
 import Card from '../Card/Card'
 import styles from '../Slides/Slides.module.css'
 import { CircularProgress } from '@mui/material'
+import ProyectsButtons from '../ProyectButtons/ProyectButtons'
 
 export default function Slides() {
   return (
@@ -13,6 +14,9 @@ export default function Slides() {
           <p className={styles['card-description']}>👋 My name is Julian, I’m 26 years old. <strong>I’m currently studying Computer Science since almost 3 years and also have an Accountant degree.</strong> As you can see, I really like maths and everything related with numbers.<br /><br />🌍  I'm based in Córdoba, Argentina <br /><br />🖥 <strong>I'm a software developer</strong> with solid professional experience building web applications. My main focus is on the front-end, but i love building and learning about both ends of the stacks. <br /><br />📚 I consider myself a very capable person to achieve everything i propose to and always want to learn new things. I think i only need the oportunity to introduce myself and show what I'm worth</p>
         </Card>
       </div>
+
+      {/* // EXPERIENCE  // */}
+
       <div className={styles['card-container']}>
         <Card
           title="Experience"
@@ -20,9 +24,12 @@ export default function Slides() {
           <p className={styles['card-description']}> 💡<b> Software Developer at Solvd Inc. </b><br /><br /> FROM {'>'} January 2022 <br /> TO {'>'} Present <br /><br /> 💡 <b> React Javascript Intern at Solvd Inc. </b><br /><br /> FROM {'>'} June 2022 <br /> TO {'>'} December 2022 <br /><br /> - Content and progress at <a href='https://github.com/qaprosoft/react-laba-arg-1'>Click here!</a> <br /><br /> 💡<b> Accountant at Centro de Estudios Filosoficos y Teologicos</b> <br /><br /> FROM {'>'} August 2021 <br /> TO {'>'} December 2022 </p>
         </Card>
       </div>
+
+      {/* // PROJECTS // */}
+
       <div className={styles['card-container']}>
         <Card
-          title="Personal Proyects"
+          title="Proyects"
         >
           <div className={styles.video}>
             <CircularProgress sx={{ zIndex: '-10', position: 'absolute' }} />
@@ -30,8 +37,8 @@ export default function Slides() {
               <source src={'/shoesShop-video.mp4'} type="video/mp4" />
             </video>
           </div>
-          <p className={styles['card-description']}> 📚 <b>Shoes Shop - Ecommerce mock</b> <br /><br /> -A responsive app created by Next.js using Next-auth for management the authentication and mainly React.js and MUI, also other libraries like Axios & ReactQuery to connect the API to the app.   <br /><br /> 📂 To see the code <a href='https://github.com/JulianOviedo/Shoes-Shop'>Click here!</a></p>
-          <p className={styles.p}> 🖥️ To see deployment <a href='https://shoes-shop-kyl2.vercel.app/'>Go here!</a></p>
+          <p className={styles['card-description']}> 📚 <b>Shoes Shop - Ecommerce mock</b> <br /><br /> -A responsive app created by Next.js using Next-auth for management the authentication and mainly React.js and MUI, also other libraries like Axios & ReactQuery to connect the API to the app.</p>
+          <ProyectsButtons repoLink='https://github.com/JulianOviedo/Shoes-Shop' deployLink='https://shoes-shop-kyl2.vercel.app/'/>
           <hr />
           <br />
           <div className={styles.video}>
@@ -40,8 +47,8 @@ export default function Slides() {
               <source src={'/Calculator-video.mp4'} type="video/mp4" />
             </video>
           </div>
-          <p className={styles['card-description']}> 📚 <b>Calculator App </b><br /><br /> Just a Calculator with the android mobile design with MUI and React.js<br /><br /> 📂 To see the code <a href='https://github.com/JulianOviedo/CalculatorApp'>Click here!</a></p>
-          <p className={styles.p}> 🖥️ To see deployment <a href='https://calculator-app-df6a9.web.app/'>Go here!</a></p>
+          <p className={styles['card-description']}> 📚 <b>Calculator App </b><br /><br /> Just a Calculator with the android mobile design with MUI and React.js<br /><br /></p>
+          <ProyectsButtons repoLink='https://github.com/JulianOviedo/CalculatorApp' deployLink='https://calculator-app-df6a9.web.app/'/>
           <hr />
           <br />
           <div className={styles.video}>
@@ -50,8 +57,8 @@ export default function Slides() {
               <source src={'/movie-browser.mp4'} type="video/mp4" />
             </video>
           </div>
-          <p className={styles['card-description']}> 📚 <b>Movie Browser </b><br /><br /> Responsive Movie browser made with React. The main goal of this project was used the useMemo & useCallback hooks from React to avoid to fetch every mutation on the value of the controlled input. The API = https://www.omdbapi.com <br /><br /> 📂 To see the code <a href='https://github.com/JulianOviedo/Movie-Browser'>Click here!</a></p>
-          <p className={styles.p}> 🖥️ To see deployment <a href='https://movie-browser-pi.vercel.app/'>Go here!</a></p>
+          <p className={styles['card-description']}> 📚 <b>Movie Browser </b><br /><br /> Responsive Movie browser made with React. The main goal of this project was used the useMemo & useCallback hooks from React to avoid to fetch every mutation on the value of the controlled input. The API = https://www.omdbapi.com <br /><br /></p>
+          <ProyectsButtons repoLink='https://github.com/JulianOviedo/Movie-Browser' deployLink='https://movie-browser-pi.vercel.app/'/>
         </Card>
       </div>
     </Carousel>
