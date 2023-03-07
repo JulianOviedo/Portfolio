@@ -9,3 +9,8 @@
     width: 150px;
     text-align: center;
 }
+
+.proyect-bttn:hover {
+    background-color: white;
+    color: black;
+}
