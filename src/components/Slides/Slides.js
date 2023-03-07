@@ -21,7 +21,7 @@ export default function Slides() {
         <Card
           title="Experience"
         >
-          <p className={styles['card-description']}> 💡<b> Software Developer at Solvd Inc. </b><br /><br /> FROM {'>'} January 2022 <br /> TO {'>'} Present <br /><br /> 💡 <b> React Javascript Intern at Solvd Inc. </b><br /><br /> FROM {'>'} June 2022 <br /> TO {'>'} December 2022 <br /><br /> - Content and progress at <a href='https://github.com/qaprosoft/react-laba-arg-1'>Click here!</a> <br /><br /> 💡<b> Accountant at Centro de Estudios Filosoficos y Teologicos</b> <br /><br /> FROM {'>'} August 2021 <br /> TO {'>'} December 2022 </p>
+          <p className={styles['card-description']}> 💡<b> Software Developer at Solvd Inc. </b><br /><br /> FROM {'>'} January 2022 <br /> TO {'>'} Present <br /><br /> 💡 <b> React Javascript Intern at Solvd Inc. </b><br /><br /> FROM {'>'} June 2022 <br /> TO {'>'} December 2022 <br /><br />  💡<b> Accountant at Centro de Estudios Filosoficos y Teologicos</b> <br /><br /> FROM {'>'} August 2021 <br /> TO {'>'} December 2022 </p>
         </Card>
       </div>
 
