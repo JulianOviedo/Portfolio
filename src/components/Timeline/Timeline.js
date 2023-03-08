@@ -12,6 +12,7 @@ export default function OppositeContentTimeline() {
   return (
     <Timeline
       sx={{
+        mt: '20px',
         [`& .${timelineOppositeContentClasses.root}`]: {
           flex: 0.2
         }
