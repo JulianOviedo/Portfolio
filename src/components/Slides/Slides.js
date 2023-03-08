@@ -3,6 +3,7 @@ import Card from '../Card/Card'
 import styles from '../Slides/Slides.module.css'
 import { CircularProgress } from '@mui/material'
 import ProyectsButtons from '../ProyectButtons/ProyectButtons'
+import Timeline from '../Timeline/Timeline.js'
 
 export default function Slides() {
   return (
@@ -21,7 +22,7 @@ export default function Slides() {
         <Card
           title="Experience"
         >
-          <p className={styles['card-description']}> 💡<b> Software Developer at Solvd Inc. </b><br /><br /> FROM {'>'} January 2022 <br /> TO {'>'} Present <br /><br /> 💡 <b> React Javascript Intern at Solvd Inc. </b><br /><br /> FROM {'>'} June 2022 <br /> TO {'>'} December 2022 <br /><br />  💡<b> Accountant at Centro de Estudios Filosoficos y Teologicos</b> <br /><br /> FROM {'>'} August 2021 <br /> TO {'>'} December 2022 </p>
+          <Timeline/>
         </Card>
       </div>
 
