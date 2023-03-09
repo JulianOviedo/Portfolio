@@ -1,8 +1,8 @@
 .proyect-bttn {
     background-color: gray;
     border: 1px solid black;
-    text-decoration: none;
-    color: white;
+    text-decoration: none !important;
+    color: white !important;
     border-radius: 20px;
     padding: 15px;
     font-weight: bold;
@@ -11,6 +11,6 @@
 }
 
 .proyect-bttn:hover {
-    background-color: white;
-    color: black;
+    background-color: white !important;
+    color: black !important;
 }
