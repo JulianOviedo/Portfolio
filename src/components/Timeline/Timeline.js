@@ -14,13 +14,13 @@ export default function OppositeContentTimeline() {
       sx={{
         mt: '20px',
         [`& .${timelineOppositeContentClasses.root}`]: {
-          flex: 0.2
+          flex: 0.7
         }
       }}
     >
       <TimelineItem>
         <TimelineOppositeContent color="gray">
-        Since January 2022
+        Since Jan 2022
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot />
@@ -30,7 +30,7 @@ export default function OppositeContentTimeline() {
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent color="gray">
-        From June 2022 to December 2022
+        Jun 2022 - Dec 2022
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot />
@@ -40,7 +40,7 @@ export default function OppositeContentTimeline() {
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent color="gray">
-        From August 2021 to January 2022
+        Aug 2021 - Jan 2022
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot />
