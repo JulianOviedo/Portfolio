@@ -42,6 +42,9 @@ export default function Slides() {
           <ProyectsButtons repoLink='https://github.com/JulianOviedo/Shoes-Shop' deployLink='https://shoes-shop-kyl2.vercel.app/'/>
           <hr />
           <br />
+
+          {/* calculator */}
+
           <div className={styles.video}>
             <CircularProgress sx={{ zIndex: '-10', position: 'absolute' }} />
             <video muted autoPlay loop width="90%" height="100%">
@@ -52,6 +55,9 @@ export default function Slides() {
           <ProyectsButtons repoLink='https://github.com/JulianOviedo/CalculatorApp' deployLink='https://calculator-app-df6a9.web.app/'/>
           <hr />
           <br />
+
+          {/* movie-browser */}
+
           <div className={styles.video}>
             <CircularProgress sx={{ zIndex: '-10', position: 'absolute' }} />
             <video muted autoPlay loop width="90%" height="100%">
@@ -62,6 +68,9 @@ export default function Slides() {
           <ProyectsButtons repoLink='https://github.com/JulianOviedo/Movie-Browser' deployLink='https://movie-browser-pi.vercel.app/'/>
           <hr />
           <br />
+
+          {/* users-api */}
+
           <div className={styles.video}>
             <CircularProgress sx={{ zIndex: '-10', position: 'absolute' }} />
             <video muted autoPlay loop width="90%" height="100%">
