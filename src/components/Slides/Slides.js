@@ -60,6 +60,16 @@ export default function Slides() {
           </div>
           <p className={styles['card-description']}> 📚 <b>Movie Browser </b><br /><br /> Responsive Movie browser made with React. The main goal of this project was used the useMemo & useCallback hooks from React to avoid to fetch every mutation on the value of the controlled input. The API = https://www.omdbapi.com <br /><br /></p>
           <ProyectsButtons repoLink='https://github.com/JulianOviedo/Movie-Browser' deployLink='https://movie-browser-pi.vercel.app/'/>
+          <hr />
+          <br />
+          <div className={styles.video}>
+            <CircularProgress sx={{ zIndex: '-10', position: 'absolute' }} />
+            <video muted autoPlay loop width="90%" height="100%">
+              <source src={'/user-api.mp4'} type="video/mp4" />
+            </video>
+          </div>
+          <p className={styles['card-description']}> 📚 <b>User API</b> <br /><br /> -App based on Next.js & Typescript made with React. The main goal of this app is the usage of the adventages of hooks and others tools from React</p>
+          <ProyectsButtons repoLink='https://github.com/JulianOviedo/User-api' deployLink='https://user-api-iota.vercel.app/'/>
         </Card>
       </div>
     </Carousel>
