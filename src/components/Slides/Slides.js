@@ -79,6 +79,17 @@ export default function Slides() {
           </div>
           <p className={styles['card-description']}> 📚 <b>User API</b> <br /><br /> -App based on Next.js & Typescript made with React. The main goal of this app is the usage of the adventages of hooks and others tools from React</p>
           <ProyectsButtons repoLink='https://github.com/JulianOviedo/User-api' deployLink='https://user-api-iota.vercel.app/'/>
+          <hr />
+          <br />
+
+          {/* GOOGLE TRANSLATE */}
+
+          <div className={styles.video}>
+            <CircularProgress sx={{ zIndex: '-10', position: 'absolute' }} />
+            <img src='/google-translate.jpeg' width="90%" height="100%"></img>
+          </div>
+          <p className={styles['card-description']}> 📚 <b>Google Translate Mock</b> <br /><br /> App made with TYPESCRIPT + REACT + CHAT GPT API</p>
+          <ProyectsButtons repoLink='https://github.com/JulianOviedo/Google-Translate-Mock' deployLink='https://google-translate-mock-git-master-julianoviedo.vercel.app/'/>
         </Card>
       </div>
     </Carousel>
