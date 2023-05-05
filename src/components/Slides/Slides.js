@@ -91,6 +91,7 @@ export default function Slides() {
           <p className={styles['card-description']}> 📚 <b>Google Translate Mock</b> <br /><br /> App made with TYPESCRIPT + REACT + CHAT GPT API</p>
           <ProyectsButtons repoLink='https://github.com/JulianOviedo/Google-Translate-Mock' deployLink='https://google-translate-mock-git-master-julianoviedo.vercel.app/'/>
         </Card>
+
       </div>
     </Carousel>
   )
